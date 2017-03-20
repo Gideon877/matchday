@@ -5,10 +5,10 @@ body {
 
 }
 
-h4 {
-    font-size: larger;
-    color: chartreuse;
-
+h2 {
+    font-size: -webkit-xxx-large;
+    color: #1e278e;
+    text-shadow: 2px 2px #c71111;
 }
 
 div {
@@ -50,3 +50,16 @@ label {
 .mydate2 {
     background-color: red;
 }
+
+/*#footer {
+  color: blue;
+  background: #8a3c3c;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  min-width: 980px;
+}
+
+hr {
+    clear: both;
+    visibility: hidden;
+}*/
