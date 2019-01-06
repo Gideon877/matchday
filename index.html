@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" href="Calendar.png">
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/Calendar.png">
         <title>Matching Days | Thabang</title>
-        <link rel="stylesheet" href="matching_days.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="css/semantic/semantic.js"></script>
+        <link rel="stylesheet" href="css/semantic/semantic.css">
+        <link rel="stylesheet" href="css/master.css">        
+        <script src="script/lodash.js"></script>
     </head>
     <body>
 
-        <h2 align="center">Matching Days</h2>
-        <div id="myTable" align="center">
-                <table align="center">
-                    <tbody>
-                        <tr id="j">
-                            <td class="days">Sunday</td>
-                            <td class="days">Monday</td>
-                            <td class="days">Tuesday</td>
-                            <td class="days">Wednesday</td>
-                            <td class="days">Thursday</td>
-                            <td class="days">Friday</td>
-                            <td class="days">Saturday</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="ui container" id="myTable">
+            <hr>
+            <h2 class="ui header">
+                    <i class="calendar alternate outline icon"></i>
+                    <div class="content">
+                        Matching Days
+                    </div>
+                  </h2>
+            <table class="ui celled table">
+                <thead>
+                    <tr><th>Days</th>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Name">Color</td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                        <td class="days"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="ui labeled input" id="MyDate">
+                <div class="ui label">First</div>
+                <input type="date" id="dateOne" placeholder="Date">
+            </div>
+            <div class="ui labeled input" id="MyDate">
+                <div class="ui label">Second</div>
+                <input type="date" id="dateTwo" placeholder="Date">
+            </div>
         </div>
-
-        <div id="MyDate" align="center">
-            <label for="dateOne">First Date :</label>
-            <input type="date" id="dateOne" placeholder="Date">
-
-            <label for="dateTwo">Second Date :</label>
-            <input type="date" id="dateTwo" placeholder="Date">
-
-            </p>
-        </div>
-
-
+        <script src="script/index.js" charset="utf-8"></script>
     </body>
-    <script src="matching_days.js" charset="utf-8"></script>
-
-    <!-- <footer>
-        <p>Posted by:<a href="https://twitter.com/gideon877"> <i>TG Magaola</i></a> ® <br></p>
-    </footer> -->
-
 </html>

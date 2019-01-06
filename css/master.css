@@ -1,0 +1,53 @@
+body {
+    background: #eaeaeab3;
+    background-repeat: no-repeat;
+
+}
+
+h2 {
+    font-size: x-large;
+}
+
+hr {
+    clear: both;
+    visibility: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 71%; */
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#dateOne {
+    color: blue;
+    font-family: fantasy;
+    text-transform: uppercase
+}
+#dateTwo {
+    color: red;
+    font-family: fantasy;
+    text-transform: uppercase
+
+}
+
+.mystyle {
+    background-color: green;
+
+}
+
+.mydate1 {
+    background-color: blue;
+}
+
+.mydate2 {
+    background-color: red;
+}
+
+div.ui.label {
+    background-color: aqua;
+    color: black;
+}
+
